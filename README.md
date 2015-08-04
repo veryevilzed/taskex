@@ -1,6 +1,18 @@
 TaskEx
 ======
 
+config.exs
+----------
+```
+config :taskex,
+    thread: 3,
+    retry: 5,
+    timeout: 5000
+```
+
+Usage
+-----
+
 ```
 TaskEx.spawn(task)
 TaskEx.spawn(task, callback)
